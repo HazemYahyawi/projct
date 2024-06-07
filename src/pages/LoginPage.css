@@ -1,0 +1,109 @@
+/* LoginPage specific styles */
+.login-page {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00013b, #80f085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    color: #80f085;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    
+  
+    .side-image1 {
+      width: 300px;
+      height: 250px;
+      border-radius: 10px 0 0 10px;
+      
+      border-radius: 10px 0 0 10px;
+      margin-left: 15%;
+     
+    }
+  }
+  
+  
+  .form-input, .form-button, .social-button {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    background-color: #80f085;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #80f085;
+  }
+  
+  .social-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b5998;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button.google-button {
+    background-color: #db4437;
+  }
+  
+  .social-button:hover {
+    opacity: 0.8;
+  }
+  
+  .forgot-password-link {
+    color: #80f085;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+  }
+  
+  .register-link {
+    text-align: center;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

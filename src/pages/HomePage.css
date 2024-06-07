@@ -1,0 +1,111 @@
+.home {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .home .slide {
+    padding: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .slide.active {
+    display: flex;
+  }
+  
+  .home .slide .content {
+    margin: 60px;
+    text-align: left;
+    padding-top: 18rem;
+  }
+  
+  .home .slide .content span {
+    color: #fff;
+    display: block;
+    font-size: 9rem;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.2s linear backwards;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  
+  .home .slide .content span:hover {
+    color: #80f085;
+  }
+  
+  .home .slide .content h3 {
+    font-size: 1.7rem;
+    color: #fff;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.2s linear backwards 0.4s;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+  }
+  
+  .home .slide .content .btn {
+    animation: fadeIn 0.2s linear backwards 0.6s;
+  }
+  
+  .home #next-slide,
+  .home #prev-slide {
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+    color: #222;
+    background: transparent;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: center;
+  }
+  
+  .home #next-slide:hover,
+  .home #prev-slide:hover {
+    background: #80f085;
+    color: #fff;
+  }
+  
+  .home #prev-slide {
+    right: 8rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    color: #222;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    letter-spacing: 0.1rem;
+    background: #80f085;
+    color: #fff;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

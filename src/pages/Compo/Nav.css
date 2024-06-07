@@ -1,0 +1,73 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #434343;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    height: 3%;
+  }
+  
+  .header .logo {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .header .logo i {
+    color: #04e298;
+  }
+  
+  .header .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .header .navbar a:hover {
+    color: #80f085;
+  }
+  
+  .header .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .icons div,
+  .header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .header .icons a:hover,
+  .header .icons div:hover {
+    background: #80f085;
+    color: #fff;
+  }
+  
+  .header #menu-btn {
+    display: none;
+  }
+  

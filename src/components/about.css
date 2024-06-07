@@ -1,0 +1,87 @@
+.about {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 9%;
+}
+
+.about .img {
+    flex: 1 1 40%;
+    padding-right: 2rem;
+}
+
+.about .img img {
+    width: 200%;
+    max-width: 600px;
+    box-shadow: 4rem 4rem 0 #eee;
+    border-radius: 0.5rem;
+}
+
+.about .content {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about .content .box {
+    padding: 3rem;
+    background: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .content .box h3 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.about .content .box h3 span {
+    color: #80f085;
+}
+
+.about .content .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: #666;
+    font-size: 1.4rem;
+}
+
+.about .content .box .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #80f085;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.about .content .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.about .content .icons-container .icons {
+    flex: 1 1 16rem;
+    background: #eee;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .content .icons-container .icons i {
+    color: #80f085;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+.about .content .icons-container .icons p {
+    font-size: 1.4rem;
+    color: #666;
+}

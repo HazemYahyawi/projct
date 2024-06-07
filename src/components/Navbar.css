@@ -1,0 +1,112 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #c8e4cd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+  }
+  
+  .header .logo {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .header .logo i {
+    color: #80f085;
+  }
+  
+  .header .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .header .navbar a:hover {
+    color: #80f085;
+  }
+  
+  .header .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .icons div,
+  .header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    font-size: 1.7rem;
+    color: #222;
+    margin-left: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .header .icons a:hover,
+  .header .icons div:hover {
+    background: #80f085;
+    color: #fff;
+  }
+  
+  .header #menu-btn {
+    display: none;
+  }
+  /* Add styles for the cart modal */
+.cart-modal {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1001;
+}
+
+.cart-modal h3 {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cart-item p {
+  margin: 0;
+}
+
+.cart-modal button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-modal button:hover {
+  background-color: #0056b3;
+}
